@@ -1,0 +1,167 @@
+@media (min-width: 650px) {
+  .header {
+    padding-bottom: 250px;
+  }
+  .header::after {
+    height: 0px;
+  }
+
+  .curve {
+    width: 100%;
+    bottom: -5%;
+  }
+  .curve > div {
+    height: 600px;
+    background-image: url("../img/bg-curvy-desktop.svg");
+  }
+
+  .logo {
+    width: 90px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 85vw;
+  }
+
+  .logo {
+    width: 115px;
+  }
+
+  .top-navigation > ul > li {
+    margin-left: 50px;
+  }
+
+  .illiustration-image {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+  .illiustration-image > div img {
+    max-width: 550px;
+  }
+
+  .headline {
+    max-width: 450px;
+  }
+  .headline > h1,
+.headline h2,
+.headline h3,
+.headline h4,
+.headline h5,
+.headline h6 {
+    line-height: 30px;
+    font-size: 1.75rem;
+  }
+  .headline p {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .how-fylo-works > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .how-fylo-works > .container > .headline {
+    margin: 0;
+    max-width: 480px;
+  }
+  .how-fylo-works > .container > .headline > h3 {
+    max-width: 225px;
+  }
+  .how-fylo-works > .container > .illiustration-image {
+    margin-right: 50px;
+  }
+  .how-fylo-works > .container > .illiustration-image > div > img {
+    max-width: 750px;
+  }
+}
+@media (min-width: 1024px) {
+  .logo {
+    width: 130px;
+  }
+
+  .features > .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    max-width: 1240px;
+  }
+  .features > .container .headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .team {
+    min-width: 668px;
+  }
+  .team > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .team > .container > .testimonial {
+    margin: 0 15px;
+  }
+
+  .sign-up > .headline {
+    max-width: 900px;
+    padding: 40px;
+  }
+  .sign-up > .headline > p {
+    max-width: 600px;
+  }
+  .sign-up > .headline > .form {
+    flex-direction: row;
+  }
+  .sign-up > .headline > .form > input {
+    margin: 0;
+    margin-right: 20px;
+    width: 65%;
+  }
+  .sign-up > .headline > .form > button {
+    margin: 0;
+    width: 35%;
+  }
+
+  .footer > .container {
+    max-width: 1400px;
+  }
+
+  .bottom-navigation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .bottom-navigation .headline {
+    text-align: left;
+    margin: 0;
+  }
+  .bottom-navigation .headline > li,
+.bottom-navigation .headline li > p {
+    margin: 0;
+  }
+  .bottom-navigation > ul:nth-of-type(1) {
+    max-width: 580px;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  .bottom-navigation > ul:nth-of-type(1) > li > p {
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .bottom-navigation > ul:nth-of-type(1) > li:nth-of-type(1) > p {
+    max-width: 380px;
+    margin-right: 50px;
+  }
+}

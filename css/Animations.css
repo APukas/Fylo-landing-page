@@ -1,0 +1,122 @@
+@keyframes svgAnimationReverse {
+  from {
+    fill: #339ecc;
+  }
+  to {
+    fill: white;
+  }
+}
+@keyframes svgAnimation {
+  from {
+    fill: white;
+  }
+  to {
+    fill: #339ecc;
+  }
+}
+@keyframes colorAnimationReverse {
+  from {
+    color: #339ecc;
+  }
+  to {
+    color: white;
+  }
+}
+@keyframes colorAnimation {
+  from {
+    color: white;
+  }
+  to {
+    color: #339ecc;
+  }
+}
+@keyframes borderAnimationReverse {
+  from {
+    border-color: #339ecc;
+  }
+  to {
+    border-color: white;
+  }
+}
+@keyframes borderAnimation {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: #339ecc;
+  }
+}
+@keyframes navigationAnimationReverse {
+  from {
+    border-color: #339ecc;
+  }
+  to {
+    border-color: white;
+  }
+}
+@keyframes navigationAnimation {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: #339ecc;
+  }
+}
+@keyframes navigationTransformYAnimationReverse {
+  from {
+    transform: translateY(-90px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes navigationTransformYAnimation {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-90px);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.social-media > li {
+  animation: borderAnimationReverse 0.4s ease-in-out forwards;
+}
+.social-media > li:hover {
+  animation: borderAnimation 0.4s ease-in-out forwards;
+  fill: #339ecc;
+}
+
+.top-navigation > ul > li > a,
+.bottom-navigation > ul:nth-of-type(2) > li > a,
+.bottom-navigation > ul:nth-of-type(3) > li > a,
+.social-media > li > a {
+  animation: colorAnimationReverse 0.4s ease-in-out forwards;
+}
+.top-navigation > ul > li:hover > a,
+.bottom-navigation > ul:nth-of-type(2) > li:hover > a,
+.bottom-navigation > ul:nth-of-type(3) > li:hover > a,
+.social-media > li:hover > a {
+  animation: colorAnimation 0.4s ease-in-out forwards;
+}
+
+.top-navigation {
+  animation: navigationAnimationReverse 0.4s ease-in-out forwards;
+}
+
+.preloader > div {
+  animation: spin 1.5s linear infinite;
+}
+.preloader > div:before {
+  animation: spin 3s linear infinite;
+}
+.preloader > div:after {
+  animation: spin 2.5s linear infinite;
+}

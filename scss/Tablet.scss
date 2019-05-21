@@ -1,0 +1,192 @@
+@media (min-width: 650px) {
+  .header {
+    padding-bottom: 250px;
+    &::after {
+      height: 0px;
+    }
+  }
+  .curve {
+    width: 100%;
+    bottom: -5%;
+    > div {
+      height: 600px;
+      background-image: url("../img/bg-curvy-desktop.svg");
+    }
+  }
+  .logo{
+    width: 90px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 85vw;
+  }
+  .logo{
+    width: 115px;
+  }
+  .top-navigation > ul > li {
+    margin-left: 50px;
+  }
+  .illiustration-image {
+    padding-top: 45px;
+    padding-bottom: 30px;
+    > div img {
+      // max-width: 460px;
+      max-width: 550px;
+    }
+  }
+  .headline {
+    max-width: 450px;
+    > h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 30px;
+      font-size: 1.75rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .how-fylo-works > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > .headline {
+      margin: 0;
+      max-width: 480px;
+      > h3 {
+        max-width: 225px;
+      }
+    }
+    > .illiustration-image {
+      margin-right: 50px;
+      > div > img {
+        max-width: 750px;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .logo{
+    width: 130px;
+  }
+  .features {
+    > .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+      // max-width: 100%;
+      max-width: 1240px;
+      .headline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 20px;
+        width: 50%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .team {
+    min-width: 668px;
+    > .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > .testimonial {
+        margin: 0 15px;
+      }
+    }
+  }
+  .sign-up > .headline {
+    max-width: 900px;
+    padding: 40px;
+    > p {
+      max-width: 600px;
+    }
+    > .form {
+      flex-direction: row;
+      > input {
+        margin: 0;
+        margin-right: 20px;
+        width: 65%;
+      }
+      > button {
+        margin: 0;
+        width: 35%;
+      }
+    }
+  }
+  .footer {
+    > .container {
+      max-width: 1400px;
+    }
+  }
+  .bottom-navigation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    .headline {
+      text-align: left;
+      margin: 0;
+      > li,
+      li > p {
+        margin: 0;
+      }
+    }
+    > ul:nth-of-type(1) {
+      max-width: 580px;
+      margin: 0;
+      flex-direction: row;
+      align-items: center;
+      > li {
+        > p {
+          align-items: center;
+          display: flex;
+          margin-bottom: 10px;
+        }
+      }
+      > li:nth-of-type(1) {
+        > p {
+          max-width: 380px;
+          margin-right: 50px;
+        }
+      }
+      
+      // $icons: location phone email;
+      // $margins: 30px 25px 23px;
+      // $pTag: 1;
+      // @for $i from 1 through length($icons) {
+      //   > li:nth-of-type(1) > p:before {
+      //     margin-right: nth($margins, $i);
+      //     content: url("../img/icon-#{nth($icons,$i)}.svg");
+      //   }
+      //   @if $i >1 {
+      //     > li:nth-of-type(2) > p:nth-of-type(#{$pTag}):before {
+      //       margin-right: nth($margins, $i);
+      //       content: url("../img/icon-#{nth($icons,$i)}.svg");
+      //     }
+      //     $pTag: $pTag + 1;
+      //   }
+      // }
+    }
+  }
+}
+@media (min-width: 1921px) {
+  // .curve {
+  //   display: block;
+  //   margin: 0 auto;
+  //   > div {
+  //     height: 900px;
+  //     max-width: 1920px;
+  //   }
+  // }
+}
